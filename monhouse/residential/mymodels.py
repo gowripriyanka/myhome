@@ -13,6 +13,7 @@ class PropertyDetail(models.Model):
 
     def __str__(self):
         return self.apartmenttype
+    class Meta:
         abstract = True
 
 class LocationDetail(models.Model):
@@ -22,4 +23,5 @@ class LocationDetail(models.Model):
 
     def __str__(self):
         return self.city
+    class Meta:
         abstract = True
